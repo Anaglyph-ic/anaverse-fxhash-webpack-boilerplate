@@ -20,10 +20,11 @@ console.log(fxrand()) // deterministic PRNG function, use it instead of Math.ran
 //   "Inverted": true
 // }
 
-// this code writes the values to the DOM as an example
-const container = document.createElement("div")
-container.innerText = `
-  random hash: ${fxhash}\n
-  some pseudo random values: [ ${fxrand()}, ${fxrand()}, ${fxrand()}, ${fxrand()}, ${fxrand()},... ]\n
-`
-document.body.prepend(container)
+import { genererFigures } from "./figures";
+
+const anaverseToken = genererFigures(fxhash);
+
+const figures = anaverseToken.figures;
+const features = anaverseToken.features;
+
+// This is where the anaverse part stops and the token part starts.
