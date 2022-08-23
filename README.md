@@ -1,4 +1,4 @@
-FXHASH Generative Token webpack boilerplate
+Anaverse - FXHASH Generative Token webpack boilerplate
 ================
 
 A boilerplate to automate and ease the creation of Generative Tokens on fxhash. This project uses [webpack](https://webpack.js.org/) and [webpack-dev-server](https://github.com/webpack/webpack-dev-server) to improve the development and deployment experience.
